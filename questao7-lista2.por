@@ -1,8 +1,6 @@
 programa {
 	funcao inicio() {
 		
-        // Dupla formada por: Brenno Henrique Freitas Barbosa e Hamilton Gomes da Silva Filho.
-		
 		cadeia nome
 		real quantidade, valorUnitario, total, totalDesconto
 		
@@ -10,20 +8,20 @@ programa {
 		leia(nome)
 		escreva("Digite a quantidade do produto: ", "\n")
 		leia(quantidade)
-		escreva("Digite o preÁo unit·rio do produto: ", "\n")
+		escreva("Digite o pre√ßo unit√°rio do produto: ", "\n")
 		leia(valorUnitario)
 		
 		total = valorUnitario * quantidade
 		
 		se (quantidade <= 5) {
             totalDesconto = (total * 0.98)
-            escreva("Produto: ",nome,".","\n","O total a pagar È de R$ ", totalDesconto,".","\n")
+            escreva("Produto: ",nome,".","\n","O total a pagar √© de R$ ", totalDesconto,".","\n")
         } senao se (quantidade <= 10 e quantidade>5) {
             totalDesconto = (total * 0.97)
-            escreva("Produto: ",nome,".","\n","O total a pagar È de R$ ", totalDesconto,".", "\n")
+            escreva("Produto: ",nome,".","\n","O total a pagar √© de R$ ", totalDesconto,".", "\n")
         } senao {
             totalDesconto = (total * 0.95)
-            escreva("Produto: ",nome,".","\n","O total a pagar È de R$ ", totalDesconto,".", "\n")
+            escreva("Produto: ",nome,".","\n","O total a pagar √© de R$ ", totalDesconto,".", "\n")
 	}
     }
     
